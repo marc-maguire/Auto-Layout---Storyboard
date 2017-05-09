@@ -23,6 +23,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ott-ub-HsZ">
+                                <rect key="frame" x="211" y="40" width="144" height="46"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppl-wf-8oN">
+                                        <rect key="frame" x="86" y="8" width="50" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="G97-5Y-URG"/>
+                                            <constraint firstAttribute="width" constant="50" id="x7U-Xc-Bep"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eky-3K-Jhb">
+                                        <rect key="frame" x="8" y="8" width="70" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="04R-Z2-MD5"/>
+                                            <constraint firstAttribute="width" constant="70" id="80C-SJ-ZkN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ppl-wf-8oN" secondAttribute="trailing" constant="8" id="2ep-23-Ppi"/>
+                                    <constraint firstItem="Eky-3K-Jhb" firstAttribute="top" secondItem="Ott-ub-HsZ" secondAttribute="top" constant="8" id="4u7-ct-0Dr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ppl-wf-8oN" secondAttribute="bottom" constant="8" id="KrH-0X-Znc"/>
+                                    <constraint firstItem="Ppl-wf-8oN" firstAttribute="leading" secondItem="Eky-3K-Jhb" secondAttribute="trailing" constant="8" id="Mny-BI-Ma1"/>
+                                    <constraint firstItem="Ppl-wf-8oN" firstAttribute="top" secondItem="Ott-ub-HsZ" secondAttribute="top" constant="8" id="VQY-jX-Nhb"/>
+                                    <constraint firstItem="Eky-3K-Jhb" firstAttribute="leading" secondItem="Ott-ub-HsZ" secondAttribute="leading" constant="8" id="c1K-BK-cV8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eky-3K-Jhb" secondAttribute="bottom" constant="8" id="dTC-NF-BAk"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpI-2u-LlS">
                                 <rect key="frame" x="191.5" y="597" width="187.5" height="50"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,8 +61,8 @@
                                     <constraint firstAttribute="height" constant="50" id="1l5-P3-tzk"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DoP-Yp-G8G">
-                                <rect key="frame" x="162" y="133" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DoP-Yp-G8G">
+                                <rect key="frame" x="162.5" y="142" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.1010196716" green="0.39531588629999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DlV-Sd-lVZ"/>
@@ -39,15 +70,15 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PG7-zh-UGa">
-                                <rect key="frame" x="162" y="308.5" width="50" height="50"/>
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.1010196716" green="0.39531588629999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="FoF-1n-5ab"/>
                                     <constraint firstAttribute="height" constant="50" id="dTp-Bb-zAn"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxl-Q7-sc6">
-                                <rect key="frame" x="162" y="468.5" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxl-Q7-sc6">
+                                <rect key="frame" x="162.5" y="475.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.1010196716" green="0.39531588629999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="h5f-Lk-bY3"/>
@@ -58,16 +89,16 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fpI-2u-LlS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="3ns-m5-E9Z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bxl-Q7-sc6" secondAttribute="bottom" priority="750" constant="146" id="8hB-ce-1Q2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fpI-2u-LlS" secondAttribute="trailing" constant="-20" id="Dna-oQ-TnM"/>
+                            <constraint firstItem="Ott-ub-HsZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="FsK-Zt-3B5"/>
                             <constraint firstItem="PG7-zh-UGa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Htl-AY-ezB"/>
-                            <constraint firstItem="DoP-Yp-G8G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="750" constant="113" id="NWy-wK-woW"/>
+                            <constraint firstItem="bxl-Q7-sc6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="Px6-wh-3F0"/>
+                            <constraint firstItem="DoP-Yp-G8G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="WWP-EZ-8ze"/>
+                            <constraint firstAttribute="trailing" secondItem="Ott-ub-HsZ" secondAttribute="trailing" constant="20" id="Zdb-Yc-vQO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fpI-2u-LlS" secondAttribute="bottom" constant="20" id="fof-4h-yCn"/>
                             <constraint firstItem="DoP-Yp-G8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k81-Gq-Zg8"/>
                             <constraint firstItem="bxl-Q7-sc6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xia-qF-gqG"/>
-                            <constraint firstItem="PG7-zh-UGa" firstAttribute="top" secondItem="DoP-Yp-G8G" secondAttribute="bottom" priority="750" constant="110" id="yHW-f9-T9b"/>
                             <constraint firstItem="PG7-zh-UGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yl9-dP-aBG"/>
-                            <constraint firstItem="bxl-Q7-sc6" firstAttribute="top" secondItem="PG7-zh-UGa" secondAttribute="bottom" priority="750" constant="110" id="you-EX-EWC"/>
                             <constraint firstItem="fpI-2u-LlS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="zkw-S6-DSm"/>
                         </constraints>
                     </view>
